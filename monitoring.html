@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const navbar = document.querySelector("nav");
+
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 50) { // Jika scroll lebih dari 50px
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+});
+
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="">
+            <a href="dashboard.html">
+                <img src="assets/nav.PNG" alt="my-avatar" />
+              </a>
+        </div>
+        <ul>
+          <li>
+            <a href="dashboard.html">Home</a>
+          </li>
+          <li class="dropdown">
+            <a href="#">Company ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="partner.html">Partner</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="project.html">Our Project</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">Our Product ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="automation.html">Automation</a></li>
+                <li><a href="monitoring.html">Data Monitoring</a></li>
+                <li><a href="industrial.html">Industrial Services</a></li>
+            </ul>
+        </li>
+          <li>
+            <a href="contact.html" style="padding-right: 50px;">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+    <section class="bglaman">
+        <h1 style="font-size:60px;margin-bottom: 20px;">Data Monitoring</h1>
+        <p style="font-size:24px;">Data monitoring is the process of tracking, analyzing, and managing data in real-time to ensure business operations run smoothly and efficiently. It helps companies detect issues early, optimize performance, and make data-driven decisions.</p>
+    </section>
+    <section class="sparing">
+        <div class="sparing-header">
+            <h2>Sparing System</h2>
+            <p class="sparing-text">Monitoring Online Kualitas Air Limbah</p>
+        </div>
+        <div class="card-sparing">
+            <img src="assets/sparing1.jpg" alt="Weintek HMI Touchscreen Display">
+            <div class="card-content-sparing">
+                <h3>Konsep Monitoring Sparing</h3>
+                <p class="card-p">Kebutuhan untuk membuat SPARING perlu menggunakan sarana yang memadai dan juga data yang diambil dapat dijadikan acuan yang benar. Dari mulai pengambilan sample yang kemudian akan dibaca menggunakan sensor, kemudian data sensor di kirim ke Water Quality Datalogger yang sudah memiliki standard sebagai data akuisisi dalam pemantauan kualitas air. Selanjut nya data yang sudah terbaca akan dikirim ke server sebagai data terpusat yang nantinya akan disajikan dalam bentuk laporan.</p>
+            </div>
+        </div>
+    </section>
+    <div class="card-container-monitoring">
+        <!-- Card Pertama -->
+        <div class="card-monitoring">
+            <img src="assets/dashboard1.PNG" alt="Weintek HMI Touchscreen Display" class="clickable-image" onclick="openLightbox(this)">
+            <div class="card-content-monitoring">
+                <h3>Dashboard</h3>
+            </div>
+        </div>
+    
+        <!-- Card Kedua -->
+        <div class="card-monitoring">
+            <img src="assets/dashboard2.PNG" alt="Weintek HMI Touchscreen Display" class="clickable-image" onclick="openLightbox(this)">
+            <div class="card-content-monitoring">
+                <h3>Dashboard</h3>
+            </div>
+        </div>
+        <div class="card-monitoring">
+            <img src="assets/dashboard3.PNG" alt="Weintek HMI Touchscreen Display" class="clickable-image" onclick="openLightbox(this)">
+            <div class="card-content-monitoring">
+                <h3>Dashboard</h3>
+            </div>
+        </div>
+        <div class="card-monitoring">
+            <img src="assets/panel2.PNG" alt="Weintek HMI Touchscreen Display" class="clickable-image" onclick="openLightbox(this)">
+            <div class="card-content-monitoring">
+                <h3>Panel Inside and Front Line Panel</h3>
+            </div>
+        </div>
+    </div>
+
+    <section class="bms">
+        <div class="bms-header">
+            <h2>Building Management System</h2>
+            <p class="bms-text">With KNK System</p>
+        </div>
+        <img src="assets/topology.png" alt="Topology Diagram">
+        <ul>
+            <li>Only one EIB cable is needed, there is no lots of cable laying and complicated control design.</li>
+            <li>Control modules are installed in the original strong electric box.</li>
+            <li>The control panel only needs one EIB bus to connect, adopts 24V safe low voltage power supply mode, safe and reliable, and easy to operate.</li>
+            <li>Convenient and flexible function/control modification, only need to make small program adjustments, instead of rewiring on site.</li>
+            <li>Save energy and improve efficiency. Through clock, light control setting, automatic operation to the best state, reasonable energy conservation, easy management and maintenance.</li>
+            <li>All control modules are modular products, using standard 35mm rail mounting.</li>
+            <li>All control panels and motion sensors are equipped with a standard 86 wall-mounted box. The construction is simple, different panels and motion sensors can be interchanged at any time, and the control functions are easily changed.</li>
+            <li>Effectively control and reduce the company's logistics management cost.</li>
+            <li>Effectively control company electricity bills and energy consumption.</li>
+            <li>Effectively improve work and study efficiency.</li>
+            <li>Effectively use and increase equipment lifetime and reduce wear and tear costs.</li>
+            <li>Effectively guarantee the safety of company personnel and property.</li>
+            <li>Improve office management and enhance company image.</li>
+        </ul>
+    </section>
+
+    <section id="cta">
+
+        <header>
+            <h2>Ready to do <strong>something</strong>?</h2>
+            <p>We Are Here to Help!! Contact Us Today!!</p>
+        </header>
+        <div class="cta-buttons">
+            <a href="contact.html" class="button alt">Contact Us</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="assets/nav.PNG" alt="Company Logo" class="footer-logo">
+                <p style="font-size: 13px;">PT. DAIMN is an Automation Company and General Trading for Industrial Service and support. Since 2007 we are focused support for industrial service, and now we have experience in Automation, Electrical, Control, Mechanical and Data Acquisition to give more service for industrial needed in Industry 4.0 application.</p>
+            </div>
+    
+            <div class="footer-column-company">
+                <h3>Company</h3>
+                <p><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></p>
+                <p><a href="project.html"><i class="fa-solid fa-chevron-right"></i> Project</a></p>
+                <p><a href="automation.html"><i class="fa-solid fa-chevron-right"></i> Automation</a></p>
+                <p><a href="industrial.html"><i class="fa-solid fa-chevron-right"></i> Industrial Services</a></p>
+                <p><a href="monitoring.html"><i class="fa-solid fa-chevron-right"></i> Data Monitoring</a></p>
+            </div>
+            
+    
+            <div class="footer-column">
+                <h3>Office</h3>
+                <p><i class="fa-solid fa-map-marker-alt"></i>Jl. Raya Sukamahi No. 88 Deltamas Cikarang Pusat - Bekasi 17530</p>
+                <p><i class="fa-solid fa-envelope"></i>sales@email-daimn88.com</p>
+                <p><i class="fa-solid fa-phone"></i> Hubungi Kami</p>
+            </div>
+        </div>
+        <div class="fot">
+            <p>Copyright © 2020 | www.daimn88.com | PT. DAIMN</p>
+        </div>
+    </footer>
+    
+</div>
