@@ -251,7 +251,7 @@ ul.buttons.stacked::after {
             ul.buttons.stacked a:hover {
                 background: rgba(255, 255, 255, 0.2); /* Efek hover dengan transparansi */
             }
-/* Responsive layout untuk layar kecil */
+ /* Responsive layout untuk layar kecil */
 @media screen and (max-width: 768px) {
     #banner {
         padding: 4em 20px; /* Kurangi padding agar lebih pas */
@@ -312,7 +312,7 @@ ul.buttons.stacked::after {
         font-size: 13px;
         padding: 8px 16px;
     }
-}            
+}           
 
 
 button {
@@ -1799,5 +1799,4 @@ footer p i {
         font-size: 24px;
     }
 }
-
 
