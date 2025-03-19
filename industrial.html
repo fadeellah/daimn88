@@ -20,42 +20,48 @@
 });
 
   </script>
+<script>
+  function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+}
+</script>
 
 </head>
 
 <body>
-    <nav>
-        <div class="">
-          <a href="dashboard.html">
-            <img src="assets/nav.PNG" alt="my-avatar" />
-          </a>
+<div class="topnav" id="myTopnav">
+  <a href="dashboard.html" class="active"><img src="assets/nav.PNG" alt="my-avatar" /></a>
+  <div class="topnav-right">
+      <a href="dashboard.html">Home</a>
+      <div class="dropdown">
+          <button class="dropbtn">Company 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="partner.html">Partner</a>
+            <a href="copy-project.html">Our Project</a>
+            <a href="about.html">About Us</a>
+          </div>
+        </div> 
+      <div class="dropdown">
+        <button class="dropbtn">Our Product 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="automation.html">Automation</a>
+          <a href="monitoring.html">Data Monitoring</a>
+          <a href="industrial.html">Industrial Services</a>
         </div>
-        <ul>
-          <li>
-            <a href="dashboard.html">Home</a>
-          </li>
-          <li class="dropdown">
-            <a href="#">Company ▾</a>
-            <ul class="dropdown-menu">
-                <li><a href="partner.html">Partner</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="project.html">Our Project</a></li>
-            </ul>
-        </li>
-        <li class="dropdown">
-            <a href="#">Our Product ▾</a>
-            <ul class="dropdown-menu">
-                <li><a href="automation.html">Automation</a></li>
-                <li><a href="monitoring.html">Data Monitoring</a></li>
-                <li><a href="industrial.html">Industrial Services</a></li>
-            </ul>
-        </li>
-          <li>
-            <a href="contact.html" style="padding-right: 50px;">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
-
+      </div> 
+      <a href="contact.html">Contact Us</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+</div>
       <section class="bglaman">
         <h1 style="font-size:60px;margin-bottom: 20px;">Industrial Services</h1>
         <p style="font-size:24px;">At PT DAIMN, we provide comprehensive industrial services to support businesses in maintaining efficiency, reliability, and sustainability. Our expertise covers a wide range of essential services, including mechanical engineering, AC/AHU systems, and WWTP (Water & Wastewater Treatment Plant) solutions.</p>
@@ -119,16 +125,16 @@
       </div>
       <div class="card-container-mechanical">
         <div class="card-mechanical">
-            <img src="assets/me1.jfif" alt="Weintek HMI Touchscreen Display">
+            <img src="assets/wwtp1.png" alt="Weintek HMI Touchscreen Display">
         </div>
 
         <div class="card-mechanical">
-            <img src="assets/me2.jfif" alt="Weintek HMI Touchscreen Display">
+            <img src="assets/wwtp2.png" alt="Weintek HMI Touchscreen Display">
             
         </div>
 
         <div class="card-mechanical">
-            <img src="assets/me1.jfif" alt="Weintek HMI Touchscreen Display">
+            <img src="assets/wwtp3.png" alt="Weintek HMI Touchscreen Display">
             
         </div>
       </div>
@@ -162,6 +168,31 @@
       </div>
       </section>
 
+      <section class="mechanical">
+        <div class="mechanical-header">
+          <h2>Machine Parts & Components</h2>
+          <p>We provide high-quality machine parts and components to ensure industrial machinery operates efficiently, reliably, and with minimal downtime. We supply precision-engineered mechanical, electrical, and automation parts for various industrial applications.</p>
+      </div>
+      <div class="card-container-mechanical">
+        <div class="card-mechanical">
+            <img src="assets/wwtp1.png" alt="Weintek HMI Touchscreen Display">
+        </div>
+
+        <div class="card-mechanical">
+            <img src="assets/wwtp2.png" alt="Weintek HMI Touchscreen Display">
+            
+        </div>
+
+        <div class="card-mechanical">
+            <img src="assets/wwtp3.png" alt="Weintek HMI Touchscreen Display">
+            
+        </div>
+      </div>
+      <div class="mechanical-button-container">
+        <a href="contact.html" class="mechanical-btn">Contact Us</a>
+      </div>
+      </section>
+
       <section id="cta">
 
         <header>
@@ -178,7 +209,8 @@
             <div class="footer-column">
                 <img src="assets/nav.PNG" alt="Company Logo" class="footer-logo">
                 <p style="font-size: 13px;">PT. DAIMN is an Automation Company and General Trading for Industrial Service and support. Since 2007 we are focused support for industrial service, and now we have experience in Automation, Electrical, Control, Mechanical and Data Acquisition to give more service for industrial needed in Industry 4.0 application.</p>
-            </div>
+                <img src="assets/certificate.jpg" alt="Company Logo" class="clm-logo">
+              </div>
     
             <div class="footer-column-company">
                 <h3>Company</h3>
