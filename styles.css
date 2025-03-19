@@ -244,7 +244,7 @@ ul.buttons.stacked::after {
         -webkit-animation-fill-mode: forwards;
         -ms-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
-        background: rgba(27, 52, 31, 0.5);
+        background: pink;
         color: #fff;
         display: inline-block;
         opacity: 0;
