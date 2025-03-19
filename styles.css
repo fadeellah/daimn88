@@ -154,6 +154,68 @@ html {
     padding: 6em 0;
     text-align: center;
 }
+ /* Responsive layout untuk layar kecil */
+@media screen and (max-width: 768px) {
+    #banner {
+        padding: 4em 20px; /* Kurangi padding agar lebih pas */
+        background-attachment: scroll; /* Nonaktifkan paralaks di layar kecil */
+        background-size: cover;
+    }
+
+    /* Header dalam banner */
+    #banner .inner {
+        padding: 2em;
+        width: 90%; /* Sesuaikan lebar */
+    }
+
+    #banner .inner header h2 {
+        font-size: 1.8em; /* Kecilkan ukuran font */
+        letter-spacing: 0.1em;
+    }
+
+    /* Ukuran teks dalam banner */
+    #banner .inner p {
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    /* Tombol agar tetap di tengah */
+    ul.buttons.stacked {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul.buttons.stacked a {
+        font-size: 14px;
+        padding: 10px 20px;
+        width: 100%; /* Lebar penuh */
+        text-align: center;
+    }
+}
+
+/* Untuk layar lebih kecil (ponsel di bawah 480px) */
+@media screen and (max-width: 480px) {
+    #banner {
+        padding: 3em 10px; /* Kurangi padding lebih banyak */
+    }
+
+    #banner .inner {
+        padding: 1.5em;
+    }
+
+    #banner .inner header h2 {
+        font-size: 1.5em;
+    }
+
+    #banner .inner p {
+        font-size: 0.9em;
+    }
+
+    ul.buttons.stacked a {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+}
 @keyframes reveal-banner {
     from {
         opacity: 0;
@@ -251,70 +313,7 @@ ul.buttons.stacked::after {
             ul.buttons.stacked a:hover {
                 background: rgba(255, 255, 255, 0.2); /* Efek hover dengan transparansi */
             }
- /* Responsive layout untuk layar kecil */
-@media screen and (max-width: 768px) {
-    #banner {
-        padding: 4em 20px; /* Kurangi padding agar lebih pas */
-        background-attachment: scroll; /* Nonaktifkan paralaks di layar kecil */
-        background-size: cover;
-    }
-
-    /* Header dalam banner */
-    #banner .inner {
-        padding: 2em;
-        width: 90%; /* Sesuaikan lebar */
-    }
-
-    #banner .inner header h2 {
-        font-size: 1.8em; /* Kecilkan ukuran font */
-        letter-spacing: 0.1em;
-    }
-
-    /* Ukuran teks dalam banner */
-    #banner .inner p {
-        font-size: 1em;
-        margin-top: 10px;
-    }
-
-    /* Tombol agar tetap di tengah */
-    ul.buttons.stacked {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    ul.buttons.stacked a {
-        font-size: 14px;
-        padding: 10px 20px;
-        width: 100%; /* Lebar penuh */
-        text-align: center;
-    }
-}
-
-/* Untuk layar lebih kecil (ponsel di bawah 480px) */
-@media screen and (max-width: 480px) {
-    #banner {
-        padding: 3em 10px; /* Kurangi padding lebih banyak */
-    }
-
-    #banner .inner {
-        padding: 1.5em;
-    }
-
-    #banner .inner header h2 {
-        font-size: 1.5em;
-    }
-
-    #banner .inner p {
-        font-size: 0.9em;
-    }
-
-    ul.buttons.stacked a {
-        font-size: 13px;
-        padding: 8px 16px;
-    }
-}           
-
-
+         
 button {
     font-size: 20px;
     background-color:white;
