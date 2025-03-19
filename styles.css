@@ -1072,6 +1072,13 @@ button:hover{
     margin-top: 10px;
     font-size: 40px;
 }
+@media screen and (max-width: 768px) {
+    .text-monitoring{   
+        text-align: center;
+        padding: 10px;
+        padding-right: 10px;
+        font-size: 32px;
+    }
 
 /* Layout utama */
 .container {
