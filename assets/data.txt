@@ -38,3 +38,17 @@ TeSys island
 Spacial SD
 Harmony STO & STU
 Power supplies for industrial use, rail mounting
+
+Tmbahan
+-industrial tambah machining part
+-partner tuker weintek 
+-mesin,panel,spm
+-weintek detail
+-perbarui gmbr
+
+YANG BELUM
+1. responsif di beberapa halaman
+2. data foto
+3. navbar jadi transparant
+4. coba lottifile
+5. sertifikat
