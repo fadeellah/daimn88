@@ -7,18 +7,14 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-    const navbar = document.querySelector("nav");
-
     window.addEventListener("scroll", function() {
-        if (window.scrollY > 50) { // Jika scroll lebih dari 50px
-            navbar.classList.add("scrolled");
-        } else {
-            navbar.classList.remove("scrolled");
-        }
-    });
+    var navbar = document.querySelector(".topnav");
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
 });
-
     </script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -39,43 +35,51 @@
         });
     });
 });
-
     </script>
+<script>
+    function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+}
+</script>
 
 </head>
 
 <body>
-    <nav id="navbar">
-        <div class="navlogo">
-            <a href="dashboard.html">
-                <img src="assets/nav.PNG" alt="my-avatar" />
-              </a>
-        </div>
-        <ul>
-          <li>
-            <a href="dashboard.html">Home</a>
-          </li>
-          <li class="dropdown">
-            <a href="#">Company ▾</a>
-            <ul class="dropdown-menu">
-                <li><a href="partner.html">Partner</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="project.html">Our Project</a></li>
-            </ul>
-        </li>
-        <li class="dropdown">
-            <a href="#">Our Product ▾</a>
-            <ul class="dropdown-menu">
-                <li><a href="automation.html">Automation</a></li>
-                <li><a href="monitoring.html">Data Monitoring</a></li>
-                <li><a href="industrial.html">Industrial Services</a></li>
-            </ul>
-        </li>
-          <li>
-            <a href="contact.html" style="padding-right: 50px;">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
+<div class="topnav" id="myTopnav">
+    <a href="dashboard.html" class="active"><img src="assets/nav.PNG" alt="my-avatar" /></a>
+    <div class="topnav-right">
+        <a href="dashboard.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Company 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="partner.html">Partner</a>
+              <a href="copy-project.html">Our Project</a>
+              <a href="about.html">About Us</a>
+            </div>
+          </div> 
+        <div class="dropdown">
+          <button class="dropbtn">Our Product 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="automation.html">Automation</a>
+            <a href="monitoring.html">Data Monitoring</a>
+            <a href="industrial.html">Industrial Services</a>
+          </div>
+        </div> 
+        <a href="contact.html">Contact Us</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  </div>
+
+
       <section id="banner">
 
         <!--
@@ -117,7 +121,7 @@
     </section>
 
     <section id="main" class="weare">
-        <img src="assets/AI-foto.jfif" alt="Italian Trulli">
+        <img src="assets/weare.png" alt="Italian Trulli">
         <div class="text-weare">
             <h3 style="color: #008000;">Who We Are?</h1>
             <h2>We Have Experience in Industry</h1>
@@ -155,29 +159,26 @@
             <h2>Our Project</h2>
             <p class="partner-text">Our projects reflect our expertise, innovation, and commitment to providing high-quality services that improve operational efficiency and reliability</p>
         </div>
-        <div class="card-container-tk-a">
-            <div class="product-card">
-                <div class="product-image"><img src="assets/project-img1.jfif" alt="Automation"></div>
+        <div class="card-container-mechanical">
+            <div class="product-card" onclick="window.location.href='copy-project.html'">
+                <img src="assets/project-img1.jfif" alt="Automation">
                 <div class="product-info">
-                    <h3>Training Kit Sample Project</h3>
+                    <h3>Automation</h3>
                 </div>
-                <button class="product-arrow" onclick="window.location.href='project.html#text-training'">See More</button>
             </div>
     
-            <div class="product-card">
-                <div class="product-image"><img src="assets/project-img2.jfif" alt="Automation"></div>
+            <div class="product-card" onclick="window.location.href='copy-project.html'">
+                <img src="assets/project-img2.jfif" alt="Automation">
                 <div class="product-info">
-                    <h3>Monitoring Sample Project</h3>
+                    <h3>Data Monitoring</h3>
                 </div>
-                <button class="product-arrow" onclick="window.location.href='project.html#text-monitoring'">See More</button>
             </div>
     
-            <div class="product-card">
-                <div class="product-image"><img src="assets/project-img3.jfif" alt="Automation"></div>
+            <div class="product-card" onclick="window.location.href='copy-project.html'">
+                <img src="assets/project-img3.jfif" alt="Automation">
                 <div class="product-info">
-                    <h3>Machine List Sample Project</h3>
+                    <h3>Industrial Services</h3>
                 </div>
-                <button class="product-arrow" onclick="window.location.href='project.html#text-machine'">See More</button>
             </div>
         </div>
     </section>
@@ -201,12 +202,13 @@
         <div class="footer-column">
             <img src="assets/nav.PNG" alt="Company Logo" class="footer-logo">
             <p style="font-size: 13px;">PT. DAIMN is an Automation Company and General Trading for Industrial Service and support. Since 2007 we are focused support for industrial service, and now we have experience in Automation, Electrical, Control, Mechanical and Data Acquisition to give more service for industrial needed in Industry 4.0 application.</p>
+            <img src="assets/certificate.jpg" alt="Company Logo" class="clm-logo">
         </div>
 
         <div class="footer-column-company">
             <h3>Company</h3>
             <p><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></p>
-            <p><a href="project.html"><i class="fa-solid fa-chevron-right"></i> Project</a></p>
+            <p><a href="copy-project.html"><i class="fa-solid fa-chevron-right"></i> Project</a></p>
             <p><a href="automation.html"><i class="fa-solid fa-chevron-right"></i> Automation</a></p>
             <p><a href="industrial.html"><i class="fa-solid fa-chevron-right"></i> Industrial Services</a></p>
             <p><a href="monitoring.html"><i class="fa-solid fa-chevron-right"></i> Data Monitoring</a></p>
@@ -218,6 +220,7 @@
             <p><i class="fa-solid fa-map-marker-alt"></i>Jl. Raya Sukamahi No. 88 Deltamas Cikarang Pusat - Bekasi 17530</p>
             <p><i class="fa-solid fa-envelope"></i>sales@email-daimn88.com</p>
             <p><i class="fa-solid fa-phone"></i> Hubungi Kami</p>
+            
         </div>
     </div>
     <div class="fot">
