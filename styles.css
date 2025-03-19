@@ -877,12 +877,7 @@ button:hover{
     background: #f9f9f9; /* Warna latar belakang */
 }
 
-/* Styling Judul */
-.mechanical-header h2 {
-    text-align: center; /* Pastikan judul di tengah */
-    font-size: 28px;
-    margin-bottom: 10px;
-}
+
 
 /* Map Container */
 .map-container {
@@ -957,13 +952,7 @@ button:hover{
         height: 280px; /* Lebih pendek di HP */
     }
 
-    .mechanical-header h2 {
-        font-size: 24px; /* Perkecil ukuran judul */
-    }
-    .mechanical-header p {
-        font-size: 16px; /* Perkecil ukuran judul */
-        text-align: center;
-    }
+
 
     .text-location {
         font-size: 14px; /* Perkecil teks */
@@ -1359,6 +1348,24 @@ h2 {
     max-width: 90%;
     margin: 0;
     opacity: 0.69;
+}
+@media screen and (max-width: 768px) {
+    .mechanical-header {
+        text-align: center;
+        margin-left: 10px; 
+        margin-right: 10px;/* Hilangkan margin kiri agar rata tengah */
+    }
+
+    .mechanical-header h2 {
+        font-size: 32px; /* Kecilkan ukuran jika perlu */
+        text-align: center;
+    }
+
+    .mechanical-header p {
+        font-size: 18px;
+        text-align: center;
+        margin: 0 auto; /* Pastikan teks tetap di tengah */
+    }
 }
 .card-container-mechanical{
     
