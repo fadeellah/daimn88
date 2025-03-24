@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const navbar = document.querySelector("nav");
+
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 50) { // Jika scroll lebih dari 50px
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+});
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Cek apakah URL memiliki hash (#)
+            if (window.location.hash) {
+                let targetId = window.location.hash.substring(1); // Ambil ID tanpa #
+                let targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    setTimeout(function() {
+                        targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }, 100); // Delay sedikit agar transisi halus
+                }
+            }
+        });
+    </script>
+<script>
+    function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+}
+</script>
+
+</head>
+
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="dashboard.html" class="active"><img src="assets/nav.PNG" alt="my-avatar" /></a>
+    <div class="topnav-right">
+        <a href="dashboard.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Company 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="partner.html">Partner</a>
+              <a href="project.html">Our Project</a>
+              <a href="about.html">About Us</a>
+            </div>
+          </div> 
+        <div class="dropdown">
+          <button class="dropbtn">Our Product 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="automation.html">Automation</a>
+            <a href="monitoring.html">Data Monitoring</a>
+            <a href="industrial.html">Industrial Services</a>
+          </div>
+        </div> 
+        <a href="contact.html">Contact Us</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  </div>
+      <section class="bglaman">
+        <h1 style="font-size:60px;margin-bottom: 20px;">Our Project</h1>
+        <p style="font-size:24px;">At PT. DAIMN, we have successfully delivered industrial automation, mechanical, electrical, and water treatment solutions for various industries. Our projects reflect our expertise, innovation, and commitment to providing high-quality services that improve operational efficiency and reliability</p>
+      </section>
+      <h2 id="text-monitoring" class="text-monitoring">Data Monitoring Sample Project</h2>
+      <!-- Lightbox Modal (Dipindahkan ke luar card-container) -->
+      <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+          <img id="lightbox-img" class="lightbox-img">
+      </div>
+      <div class="card-container-monitoring">
+          <!-- Card Pertama -->
+          <div class="card-monitoring">
+              <img src="assets/M1.PNG" alt="Weintek HMI Touchscreen Display" class="clickable-image" onclick="openLightbox(this)">
+              <div class="card-content-monitoring">
+                  <h3>GAS MONITORING</h3>
+                  <p class="card-p">Orifice Gas Meter Monitoring</p>
+              </div>
+          </div>
+      
+          <!-- Card Kedua -->
+          <div class="card-monitoring">
+              <img src="assets/M2.PNG" alt="Weintek HMI Touchscreen Display" class="clickable-image" onclick="openLightbox(this)">
+              <div class="card-content-monitoring">
+                  <h3>POWER MONITORING</h3>
+                  <p class="card-p">Power Meter Monitor and Reporting</p>
+              </div>
+          </div>
+          <div class="card-monitoring">
+              <img src="assets/M3.PNG" alt="Weintek HMI Touchscreen Display" class="clickable-image" onclick="openLightbox(this)">
+              <div class="card-content-monitoring">
+                  <h3>ANDON PRODUCTION</h3>
+                  <p class="card-p">Andon Machine Process</p>
+              </div>
+          </div>
+          <div class="card-monitoring">
+              <img src="assets/M4.PNG" alt="Weintek HMI Touchscreen Display" class="clickable-image" onclick="openLightbox(this)">
+              <div class="card-content-monitoring">
+                  <h3>FURNACE PROSESS</h3>
+                  <p class="card-p">Furnace Process Monitoring</p>
+              </div>
+          </div>
+          <div class="card-monitoring">
+              <img src="assets/M5.PNG" alt="Weintek HMI Touchscreen Display" class="clickable-image" onclick="openLightbox(this)">
+              <div class="card-content-monitoring">
+                  <h3>MIXER CONTROL</h3>
+                  <p class="card-p">Mixer Machine Auto Process</p>
+              </div>
+          </div>
+          <div class="card-monitoring">
+              <img src="assets/M6.PNG" alt="Weintek HMI Touchscreen Display" class="clickable-image" onclick="openLightbox(this)">
+              <div class="card-content-monitoring">
+                  <h3>UTILITY MONITORING</h3>
+                  <p class="card-p">Utility Monitoring and Reporting</p>
+              </div>
+          </div>
+      </div>
+      
+    
+
+    <h2 id="text-machine" class="text-monitoring">Machine List Sample Project</h2>
+    <div class="card-container-tk">
+        <div class="card-tk">
+            <img src="assets/mcn1.png" alt="Weintek HMI Touchscreen Display">
+            <div class="card-content-tk">
+                <h3>Robot Pick & Place Nyam</h3>
+            </div>
+        </div>
+
+        <div class="card-tk">
+            <img src="assets/mcn2.PNG" alt="Weintek HMI Touchscreen Display">
+            <div class="card-content-tk">
+                <h3>Paletizer</h3>
+            </div>
+        </div>
+        <div class="card-tk">
+            <img src="assets/mcn3.PNG" alt="Weintek HMI Touchscreen Display">
+            <div class="card-content-tk">
+                <h3>Hopper Cup</h3>
+            </div>
+        </div>
+
+        <div class="card-tk">
+            <img src="assets/mcn4.PNG" alt="Weintek HMI Touchscreen Display">
+            <div class="card-content-tk">
+                <h3>Check Weigher</h3>
+            </div>
+        </div>
+        <div class="card-tk">
+            <img src="assets/mcn5.PNG" alt="Weintek HMI Touchscreen Display">
+            <div class="card-content-tk">
+                <h3>Depucker</h3>
+            </div>
+        </div>
+    </div>
+
+    
+
+      </div>
+      <a href="https://wa.me/6282211860733" class="whatsapp-float" target="_blank">
+        <img src="assets/wa-logo.png" alt="WhatsApp">
+        </a>
+      <section id="cta">
+
+        <header>
+            <h2>Ready to do <strong>something</strong>?</h2>
+            <p>We Are Here to Help!! Contact Us Today!!</p>
+        </header>
+        <div class="cta-buttons">
+            <a href="contact.html" class="button alt">Contact Us</a>
+        </div>
+
+    </section>
+      <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="assets/nav.PNG" alt="Company Logo" class="footer-logo">
+                <p style="font-size: 13px;">PT. DAIMN is an Automation Company and General Trading for Industrial Service and support. Since 2007 we are focused support for industrial service, and now we have experience in Automation, Electrical, Control, Mechanical and Data Acquisition to give more service for industrial needed in Industry 4.0 application.</p>
+                <img src="assets/certificate.jpg" alt="Company Logo" class="clm-logo">
+            </div>
+    
+            <div class="footer-column-company">
+                <h3>Company</h3>
+                <p><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></p>
+                <p><a href="project.html"><i class="fa-solid fa-chevron-right"></i> Project</a></p>
+                <p><a href="automation.html"><i class="fa-solid fa-chevron-right"></i> Automation</a></p>
+                <p><a href="industrial.html"><i class="fa-solid fa-chevron-right"></i> Industrial Services</a></p>
+                <p><a href="monitoring.html"><i class="fa-solid fa-chevron-right"></i> Data Monitoring</a></p>
+            </div>
+            
+    
+            <div class="footer-column">
+                <h3>Office</h3>
+                <p><i class="fa-solid fa-map-marker-alt"></i>Jl. Raya Sukamahi No. 88 Deltamas Cikarang Pusat - Bekasi 17530</p>
+                <p><i class="fa-solid fa-envelope"></i>sales@email-daimn88.com</p>
+                <p><i class="fa-solid fa-phone"></i> Hubungi Kami</p>
+            </div>
+        </div>
+        <div class="fot">
+            <p>Copyright © 2020 | www.daimn88.com | PT. DAIMN</p>
+        </div>
+    </footer>

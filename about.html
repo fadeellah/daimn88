@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT DAIMN | AUTOMATION COMPANY</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const navbar = document.querySelector("nav");
+
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 50) { // Jika scroll lebih dari 50px
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+});
+
+    </script>
+<script>
+    function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+}
+</script>
+
+</head>
+
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="dashboard.html" class="active"><img src="assets/LOGO DAIMN NEW.png" alt="my-avatar" /></a>
+    <div class="topnav-right">
+        <a href="dashboard.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Company 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="partner.html">Partner</a>
+              <a href="copy-project.html">Our Project</a>
+              <a href="about.html">About Us</a>
+            </div>
+          </div> 
+        <div class="dropdown">
+          <button class="dropbtn">Our Product 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="automation.html">Automation</a>
+            <a href="monitoring.html">Data Monitoring</a>
+            <a href="industrial.html">Industrial Services</a>
+          </div>
+        </div> 
+        <a href="contact.html">Contact Us</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  </div>
+    <section class="bglaman">
+        <h1 style="font-size:60px;margin-bottom: 20px;">About Us</h1>
+        <p style="font-size:24px;">PT. DAIMN is an Automation Company and General Trading for Industrial Service and support. Since 2007 we are focused support for industrial service, and now we have experience in Automation, Electrical, Control, Mechanical and Data Acquisition to give more service for industrial needed in Industry 4.0 application.</p>
+    </section>
+    <section class="contentabt">
+        <img src="assets/logo4.png" alt="Italian Trulli">
+        <div class="text-contentabt">
+            <h1>Authorized Distributor Weintek Indonesia</h1>
+            <p style="font-size:20px;">We are the Authorized Distributor of HMI Touch Screen Weintek in Indonesia, and have become a reliable partner with excellent service and always strive to provide quality HMI Weintek products.</p>
+        </div>
+    </section>
+    
+    <section class="contentabt2">
+        <p>The main reason we provide services in the field of HMI Touch Screen by using Weintek Products is because Weintek is a brand and company that is consistent in providing innovation and various developments in the world of Human Machine Interfaces that follow the latest technologi advances and trends in various kinds of innovations that are developing today.</p>
+        <p>PT. Daimn is committed to always providing the best service for customers and users of Weintek HMI, both in terms of providing hardware and as a Support Integrator for developing customer needs in the world of Automation Industry. We will always try to provide support for customers as well as input for the development of HMI Weintek going forward to always be the choice of customers in meeting the needs in the world of automation.</p>
+    </section>
+
+    <section class="contentabt">
+        <div class="text-contentabt">
+            <h1>Application And System</h1>
+            <p style="font-size:20px;">Over the year we have lots of experience in our field. In automation system and software or hardware we give supporting for our valuable customers.</p>
+        </div>
+        <img src="assets/trial.jfif" alt="Italian Trulli">
+    </section>
+
+    <section id="cta">
+
+        <header>
+            <h2>Ready to do <strong>something</strong>?</h2>
+            <p>We Are Here to Help!! Contact Us Today!!</p>
+        </header>
+        <div class="cta-buttons">
+            <a href="contact.html" class="button alt">Contact Us</a>
+        </div>
+
+    </section>
+    <a href="https://wa.me/https://linktr.ee/daimn88" class="whatsapp-float" target="_blank">
+        <img src="assets/wa-logo.png" alt="WhatsApp">
+        </a>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="assets/LOGO DAIMN NEW.png" alt="Company Logo" class="footer-logo">
+                <img src="assets/certificate.jpg" alt="Company Logo" class="clm-logo">
+                <img src="assets/csms.png" alt="Company Logo" class="clm-logo2">
+                
+            </div>
+    
+            <div class="footer-column-company">
+                <h3>Company</h3>
+                <p><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></p>
+                <p><a href="project.html"><i class="fa-solid fa-chevron-right"></i> Project</a></p>
+                <p><a href="automation.html"><i class="fa-solid fa-chevron-right"></i> Automation</a></p>
+                <p><a href="industrial.html"><i class="fa-solid fa-chevron-right"></i> Industrial Services</a></p>
+                <p><a href="monitoring.html"><i class="fa-solid fa-chevron-right"></i> Data Monitoring</a></p>
+            </div>
+            
+    
+            <div class="footer-column">
+                <h3>Office</h3>
+                <p><i class="fa-solid fa-map-marker-alt"></i>Jl. Raya Sukamahi No. 88 Deltamas Cikarang Pusat - Bekasi 17530</p>
+                <p><i class="fa-solid fa-envelope"></i>sales@email-daimn88.com</p>
+                <p><i class="fa-solid fa-phone"></i> Hubungi Kami</p>
+            </div>
+        </div>
+        <div class="fot">
+            <p>Copyright © 2020 | www.daimn88.com | PT. DAIMN</p>
+        </div>
+    </footer>

@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT DAIMN | AUTOMATION COMPANY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        window.addEventListener("scroll", function() {
+    var navbar = document.querySelector(".topnav");
+    if (window.scrollY > 50) { // Saat di-scroll lebih dari 50px
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Cek apakah URL memiliki hash (#)
+            if (window.location.hash) {
+                let targetId = window.location.hash.substring(1); // Ambil ID tanpa #
+                let targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    setTimeout(function() {
+                        targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }, 100); // Delay sedikit agar transisi halus
+                }
+            }
+        });
+    </script>
+    <script>
+        function showContent(section) {
+    document.getElementById("monitoring").style.display = section === "monitoring" ? "block" : "none";
+    document.getElementById("spm").style.display = section === "spm" ? "block" : "none";
+    document.getElementById("panel").style.display = section === "panel" ? "block" : "none";
+    document.getElementById("mechanical").style.display = section === "mechanical" ? "block" : "none";
+    document.getElementById("ac/ahu").style.display = section === "ac/ahu" ? "block" : "none";
+    document.getElementById("wwtp").style.display = section === "wwtp" ? "block" : "none";
+    document.getElementById("machine").style.display = section === "machine" ? "block" : "none";
+}
+
+    </script>
+    <script>
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
+
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="dashboard.html" class="active"><img src="assets/LOGO DAIMN NEW.png" alt="my-avatar" /></a>
+        <div class="topnav-right">
+            <a href="dashboard.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Company 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="partner.html">Partner</a>
+                  <a href="copy-project.html">Our Project</a>
+                  <a href="about.html">About Us</a>
+                </div>
+              </div> 
+            <div class="dropdown">
+              <button class="dropbtn">Our Product 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="automation.html">Automation</a>
+                <a href="monitoring.html">Data Monitoring</a>
+                <a href="industrial.html">Industrial Services</a>
+              </div>
+            </div> 
+            <a href="contact.html">Contact Us</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+      </div>
+
+      <section class="bglaman">
+        <h1 style="font-size:60px;margin-bottom: 20px;">Our Project</h1>
+        <p style="font-size:24px;">At PT. DAIMN, we have successfully delivered industrial automation, mechanical, electrical, and water treatment solutions for various industries. Our projects reflect our expertise, innovation, and commitment to providing high-quality services that improve operational efficiency and reliability</p>
+      </section>
+      
+      <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a  onclick="showContent('monitoring')">Data Monitoring</a></li>
+                <li><a  onclick="showContent('spm')">Special Purpose Machines</a></li>
+                <li><a  onclick="showContent('panel')">Control Panel Design</a></li>
+                <li><a  onclick="showContent('mechanical')">ME Engineering</a></li>
+                <li><a  onclick="showContent('ac/ahu')">AC/AHU systems</a></li>
+                <li><a  onclick="showContent('wwtp')">WWTP Solutions</a></li>
+                <li><a  onclick="showContent('machine')">Machine Parts & Components</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Data Monitoring Section -->
+            <section id="monitoring" >
+                <div class="text-line"><h2>Data Monitoring</h2></div>
+                <div class="card-container-monitoring">
+                    <!-- Batas Char (copas yg bawah ini kalo mau nambah produk)-->
+                    <div class="card-monitoring" onclick="openModal('mymodal'); currentSlide(1, 'mymodal')">
+                        <img src="assets/M1.PNG" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>GAS MONITORING</h3>
+                            <p>Orifice Gas Meter Monitoring</p>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                    <!--########################################################-->
+                    <div class="card-monitoring" onclick="openModal('mymodal'); currentSlide(2, 'mymodal')">
+                        <img src="assets/M2.PNG" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>POWER MONITORING</h3>
+                            <p>Power Meter Monitor and Reporting</p>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                    <div class="card-monitoring" onclick="openModal('mymodal'); currentSlide(3, 'mymodal')">
+                        <img src="assets/M3.PNG" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>ANDON PRODUCTION</h3>
+                            <p>Andon Machine Process</p>
+                            <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>           
+                        </div>
+                    </div>
+                
+                
+                    <div class="card-monitoring" onclick="openModal('mymodal'); currentSlide(4, 'mymodal')">
+                        <img src="assets/M4.PNG" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>FURNACE PROSESS</h3>
+                            <p>Furnace Process Monitoring</p>
+                            <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>            
+                        </div>
+                    </div>
+                    <div class="card-monitoring" onclick="openModal('mymodal'); currentSlide(5, 'mymodal')">
+                        <img src="assets/M5.PNG" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>MIXER CONTROL</h3>
+                            <p>Mixer Machine Auto Process</p>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                    <div class="card-monitoring" onclick="openModal('mymodal'); currentSlide(6, 'mymodal')">
+                        <img src="assets/M6.PNG" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>UTILITY MONITORING</h3>
+                            <p>Utility Monitoring and Reporting</p>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="mymodal" class="modal" data-slide-index="1">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="assets/M1.PNG" >
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="assets/M2.PNG" >
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="assets/M3.PNG" >
+                      </div>
+                      
+                      <div class="mySlides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="assets/M4.PNG" >
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="assets/M5.PNG" >
+                      </div>
+                      
+                      <div class="mySlides">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="assets/M6.PNG" >
+                      </div>
+                      
+                      <a class="prev" onclick="plusSlides(-1, 'mymodal')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'mymodal')">&#10095;</a>
+                  
+                      
+                    </div>    
+                  </div>
+            </section>
+
+            <!-- SPM Section -->
+            <section id="spm" style="display: none;">
+                <div class="text-line"><h2>Special Purpose Machines</h2></div>
+                <div class="card-container-monitoring">
+                    <!-- Batas Char (copas yg bawah ini kalo mau nambah produk)-->
+                    <div class="card-monitoring" onclick="openModal('mymodal3'); currentSlide(1, 'mymodal3')">
+                        <img src="assets/mcn1.PNG" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>Robot Pick & Place</h3>
+                            <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>
+                        </div>
+                    </div>
+                    <!--############################################################-->
+                    <div class="card-monitoring" onclick="openModal('mymodal3'); currentSlide(2, 'mymodal3')">
+                        <img src="assets/mcn2.PNG" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>Paletizer</h3>
+                            <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>
+                        </div>
+                    </div>
+                    <div class="card-monitoring" onclick="openModal('mymodal3'); currentSlide(3, 'mymodal3')">
+                        <img src="assets/mcn3.PNG" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>Hopper Cup</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->
+                        </div>
+                    </div>
+                
+                
+                    <div class="card-monitoring" onclick="openModal('mymodal3'); currentSlide(4, 'mymodal3')">
+                        <img src="assets/mcn4.PNG" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>Check Weigher</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                    <div class="card-monitoring" onclick="openModal('mymodal3'); currentSlide(5, 'mymodal3')">
+                        <img src="assets/mcn5.PNG" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>Depucker</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                    <div class="card-monitoring" onclick="openModal('mymodal3'); currentSlide(6, 'mymodal3')">
+                        <img src="assets/spm1.PNG" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>Metal Ball Inserter</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                    <div class="card-monitoring" onclick="openModal('mymodal3'); currentSlide(6, 'mymodal3')">
+                        <img src="assets/spm2.PNG" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>Cap Tightener</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                    <div class="card-monitoring" onclick="openModal('mymodal3'); currentSlide(6, 'mymodal3')">
+                        <img src="assets/spm3.PNG" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>Pokayoke Pick Up</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                    <div class="card-monitoring" onclick="openModal('mymodal3'); currentSlide(6, 'mymodal3')">
+                        <img src="assets/spm4.PNG" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>Vision System - Dot Mark</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                    <div class="card-monitoring" onclick="openModal('mymodal3'); currentSlide(6, 'mymodal3')">
+                        <img src="assets/spm5.PNG" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>Vision System - Ink Jet Orientation</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+
+                    <!--Tambah diatas ini-->
+                </div>
+                
+                <div id="mymodal3" class="modal" data-slide-index="1">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">1 / 10</div>
+                        <img src="assets/mcn1.PNG" >
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">2 / 10</div>
+                        <img src="assets/mcn2.PNG" >
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">3 / 10</div>
+                        <img src="assets/mcn3.PNG" >
+                      </div>
+                      
+                      <div class="mySlides">
+                        <div class="numbertext">4 / 10</div>
+                        <img src="assets/mcn4.PNG" >
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">5 / 10</div>
+                        <img src="assets/mcn5.PNG" >
+                      </div>
+                      
+                      <div class="mySlides">
+                        <div class="numbertext">6 / 10</div>
+                        <img src="assets/spm1.PNG" >
+                      </div>
+
+                      <div class="mySlides">
+                        <div class="numbertext">7 / 10</div>
+                        <img src="assets/spm2.PNG" >
+                      </div>
+
+                      <div class="mySlides">
+                        <div class="numbertext">8 / 10</div>
+                        <img src="assets/spm3.PNG" >
+                      </div>
+
+                      <div class="mySlides">
+                        <div class="numbertext">9 / 10</div>
+                        <img src="assets/spm4.PNG" >
+                      </div>
+
+                      <div class="mySlides">
+                        <div class="numbertext">10 / 10</div>
+                        <img src="assets/spm5.PNG" >
+                      </div>
+                      
+                      <a class="prev" onclick="plusSlides(-1, 'mymodal3')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'mymodal3')">&#10095;</a>
+                </div>
+            </div>
+            </section>
+
+            <!-- panel -->
+            <section id="panel" style="display: none;">
+                <div class="text-line"><h2>Control Panel Design</h2></div>
+                <div class="card-container-monitoring">
+                    <!-- Batas Char (copas yg bawah ini kalo mau nambah produk)-->
+                    <div class="card-monitoring" onclick="openModal('mymodal4'); currentSlide(1, 'mymodal4')">
+                        <img src="assets/panel100.png" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>Panel 1</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                    <!--##########################################################-->
+                    <div class="card-monitoring" onclick="openModal('mymodal4'); currentSlide(2, 'mymodal4')">
+                        <img src="assets/panel101.png" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>panel 2</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                    <div class="card-monitoring" onclick="openModal('mymodal4'); currentSlide(3, 'mymodal4')">
+                        <img src="assets/panel102.png" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>Panel 3</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="mymodal4" class="modal" data-slide-index="1">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="assets/panel100.png" >
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="assets/panel101.png" >
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="assets/panel102.png" >
+                      </div>
+                      
+                      
+                      
+                      <a class="prev" onclick="plusSlides(-1, 'mymodal4')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'mymodal4')">&#10095;</a>
+                  
+                      
+                    </div>    
+                  </div>
+            </section>
+            <!-- mechanicla -->
+            <section id="mechanical" style="display: none;">
+                <div class="text-line"><h2>ME Engineering</h2></div>
+                <div class="card-container-monitoring">
+                    <!-- Batas Char (copas yg bawah ini kalo mau nambah produk)-->
+                    <div class="card-monitoring" onclick="openModal('mymodal5'); currentSlide(1, 'mymodal5')">
+                        <img src="assets/M1.PNG" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>GAS MONITORING</h3>
+                            <p>Orifice Gas Meter Monitoring</p>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                    <!--################################################################-->
+                </div>
+                
+                <div id="mymodal5" class="modal" data-slide-index="1">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="assets/M1.PNG" >
+                      </div>
+                  
+                      
+                      
+                      <a class="prev" onclick="plusSlides(-1, 'mymodal5')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'mymodal5')">&#10095;</a>
+                  
+                      
+                    </div>    
+                  </div>
+            </section>
+            
+            <!-- ac/ahu -->
+            <section id="ac/ahu" style="display: none;">
+                <div class="text-line"><h2>AC/AHU systems</h2></div>
+                <div class="card-container-monitoring">
+                    <!-- Batas Char (copas yg bawah ini kalo mau nambah produk)-->
+                    <div class="card-monitoring" onclick="openModal('mymodal6'); currentSlide(1, 'mymodal6')">
+                        <img src="assets/acahu/1.png" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>AC Outdoor</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                    <!--#######################################################-->
+                    <div class="card-monitoring" onclick="openModal('mymodal6'); currentSlide(2, 'mymodal6')">
+                        <img src="assets/acahu/2.png" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>AC Outdoor</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                    <div class="card-monitoring" onclick="openModal('mymodal6'); currentSlide(3, 'mymodal6')">
+                        <img src="assets/acahu/3.png" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>AC Indoor</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="mymodal6" class="modal" data-slide-index="1">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="assets/acahu/1.png" >
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="assets/acahu/2.png" >
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="assets/acahu/3.png" >
+                      </div>
+                      
+                     
+                      
+                      <a class="prev" onclick="plusSlides(-1, 'mymodal6')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'mymodal6')">&#10095;</a>
+                  
+                      
+                    </div>    
+                  </div>
+            </section>
+            <!-- wwtp -->
+            <section id="wwtp" style="display: none;">
+                <div class="text-line"><h2>WWTP Solutions</h2></div>
+                <div class="card-container-monitoring">
+                    <!-- Batas Char (copas yg bawah ini kalo mau nambah produk)-->
+                    <div class="card-monitoring" onclick="openModal('mymodal7'); currentSlide(1, 'mymodal7')">
+                        <img src="assets/wwtp1.png" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>WWTP 1</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                    <!--###########################################################-->
+                    <div class="card-monitoring" onclick="openModal('mymodal7'); currentSlide(2, 'mymodal7')">
+                        <img src="assets/wwtp2.png" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>WWTP 2</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                    <div class="card-monitoring" onclick="openModal('mymodal7'); currentSlide(3, 'mymodal7')">
+                        <img src="assets/wwtp3.png" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>WWTP 3</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="mymodal7" class="modal" data-slide-index="1">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="assets/wwtp1.png" >
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="assets/wwtp2.png" >
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="assets/wwtp3.png" >
+                      </div>
+                      
+                     
+                      
+                      <a class="prev" onclick="plusSlides(-1, 'mymodal7')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'mymodal7')">&#10095;</a>
+                  
+                      
+                    </div>    
+                  </div>
+            </section>
+
+            <!-- machine -->
+            <section id="machine" style="display: none;">
+                <div class="text-line"><h2>Machine Parts & Components</h2></div>
+                <div class="card-container-monitoring">
+                    <div class="card-monitoring" onclick="openModal('mymodal2'); currentSlide(1, 'mymodal2')">
+                        <img src="assets/mcn-prt.png" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>Machine Part</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                    <div class="card-monitoring" onclick="openModal('mymodal2'); currentSlide(1, 'mymodal2')">
+                        <img src="assets/mcn-prt2.png" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>Machine Part</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                    <div class="card-monitoring" onclick="openModal('mymodal2'); currentSlide(1, 'mymodal2')">
+                        <img src="assets/mcn-prt3.png" alt="Weintek HMI Touchscreen Display">
+                        <div class="card-content-monitoring">
+                            <h3>Machine Part</h3>
+                    <!--    <p>PT. Cinta Sejati</p>
+                            <p>2022</p>
+                            <p>West Java</p>    -->        
+                        </div>
+                    </div>
+                </div>
+                <div id="mymodal2" class="modal" data-slide-index="1">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                  
+                      <div class="mySlides">
+                        <div class="numbertext" >1 / 4</div>
+                        <img src="assets/mcn-prt.png" >
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="assets/mcn-prt2.png" >
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="assets/mcn-prt3.png" >
+                      </div>
+                      
+                      
+                      <a class="prev" onclick="plusSlides(-1, 'mymodal2')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'mymodal2')">&#10095;</a>
+                  
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                  
+                  
+                      
+                    </div>
+                  </div>
+            </section>
+        </main>
+    </div>
+
+    <a href="https://wa.me/https://linktr.ee/daimn88" class="whatsapp-float" target="_blank">
+        <img src="assets/wa-logo.png" alt="WhatsApp">
+        </a>
+      <section id="cta">
+
+        <header>
+            <h2>Ready to do <strong>something</strong>?</h2>
+            <p>We Are Here to Help!! Contact Us Today!!</p>
+        </header>
+        <div class="cta-buttons">
+            <a href="contact.html" class="button alt">Contact Us</a>
+        </div>
+
+    </section>
+      <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="assets/LOGO DAIMN NEW.png" alt="Company Logo" class="footer-logo">
+                <img src="assets/certificate.jpg" alt="Company Logo" class="clm-logo">
+                <img src="assets/csms.png" alt="Company Logo" class="clm-logo2">
+                
+            </div>
+    
+            <div class="footer-column-company">
+                <h3>Company</h3>
+                <p><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></p>
+                <p><a href="project.html"><i class="fa-solid fa-chevron-right"></i> Project</a></p>
+                <p><a href="automation.html"><i class="fa-solid fa-chevron-right"></i> Automation</a></p>
+                <p><a href="industrial.html"><i class="fa-solid fa-chevron-right"></i> Industrial Services</a></p>
+                <p><a href="monitoring.html"><i class="fa-solid fa-chevron-right"></i> Data Monitoring</a></p>
+            </div>
+            
+    
+            <div class="footer-column">
+                <h3>Office</h3>
+                <p><i class="fa-solid fa-map-marker-alt"></i>Jl. Raya Sukamahi No. 88 Deltamas Cikarang Pusat - Bekasi 17530</p>
+                <p><i class="fa-solid fa-envelope"></i>sales@email-daimn88.com</p>
+                <p><i class="fa-solid fa-phone"></i> Hubungi Kami</p>
+            </div>
+        </div>
+        <div class="fot">
+            <p>Copyright © 2020 | www.daimn88.com | PT. DAIMN</p>
+        </div>
+    </footer>
+    <script>
+        function showContent(section) {
+    // Sembunyikan semua section
+    var sections = ["monitoring", "spm", "panel", "mechanical", "ac/ahu", "wwtp", "machine"];
+    sections.forEach(sec => {
+        document.getElementById(sec).style.display = sec === section ? "block" : "none";
+    });
+
+    // Tutup semua modal saat berpindah halaman
+    closeModal();
+}
+
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal() {
+    document.querySelectorAll(".modal").forEach(modal => {
+        modal.style.display = "none";
+    });
+}
+
+// Lightbox Slideshow
+function plusSlides(n, modalId) {
+    let modal = document.getElementById(modalId);
+    let slides = modal.getElementsByClassName("mySlides");
+
+    let index = modal.dataset.slideIndex ? parseInt(modal.dataset.slideIndex) : 1;
+    index += n;
+
+    if (index > slides.length) index = 1;
+    if (index < 1) index = slides.length;
+
+    modal.dataset.slideIndex = index;
+    showSlides(index, modalId);
+}
+
+function currentSlide(n, modalId) {
+    let modal = document.getElementById(modalId);
+    modal.dataset.slideIndex = n;
+    showSlides(n, modalId);
+}
+
+function showSlides(n, modalId) {
+    let modal = document.getElementById(modalId);
+    let slides = modal.getElementsByClassName("mySlides");
+
+    for (let slide of slides) {
+        slide.style.display = "none";
+    }
+
+    slides[n - 1].style.display = "block";
+}
+
+        </script>
+</body>
