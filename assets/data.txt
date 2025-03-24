@@ -1,0 +1,55 @@
+DDC
+Sistem BMS
+perbedaan dengan PLC (PLC gaada internar memory dan belum scheduling kontrol)
+
+industrial services
+mekanikal eng
+ac/ahu
+wwtp water treatment
+
+automation
+scheneider electric
+
+display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: fixed;  /* Navbar tetap di atas */
+    top: 0;           /* Posisi di bagian atas halaman */
+    left: 0;
+    width: 100%;      /* Lebar penuh */
+    z-index: 1000;    /* Supaya tidak tertutup elemen lain */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+BioCel I
+AstroCel I
+AstroHood S-III RSR-IV
+Electrostatic Precipitator (ESP)
+AstroPure 600N
+SAAF Front Access Housing (FAH)
+
+CP1E CP-series
+CP2E CP series
+CP1W-EIP61 EtherNet
+CP1L CP series
+
+Relay
+Altivar Solar
+TeSys island
+Spacial SD
+Harmony STO & STU
+Power supplies for industrial use, rail mounting
+
+Tmbahan
+-industrial tambah machining part
+-partner tuker weintek 
+-mesin,panel,spm
+-weintek detail
+-perbarui gmbr
+
+YANG BELUM
+1. responsif di beberapa halaman
+2. data foto
+3. navbar jadi transparant
+4. coba lottifile
+5. sertifikat
+6. our customer
